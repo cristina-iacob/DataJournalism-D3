@@ -1,4 +1,4 @@
-// @TODO: YOUR CODE HERE!
+
 // create SVG for chart
 // Step 1: Set up our chart
 //= ================================
@@ -85,12 +85,12 @@ d3.csv("./assets/data/data.csv").then(function(health_data) {
       .attr("x", 0 - (height / 2))
       .attr("dy", "1em")
       .attr("class", "axisText")
-      .text("Percent of Smokers");
+      .text("Smokers (%)");
       
     chartGroup.append("text")
       .attr("transform", `translate(${width / 2}, ${height + margin.top + 30})`)
       .attr("class", "axisText")
-      .text("Age of Smoker(s)");
+      .text("Age (Median)ƒ");
 
     var toolTip = d3.select("body").append("div")
     .attr("class", "d3-tip");
